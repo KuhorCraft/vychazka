@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vycházka s Lukášem Horákem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Vycházka s Lukášem Horákem</h1>
+    </header>
+
+    <main class="container">
+        <!-- Zobrazení seznamu číselných tlačítek -->
+        <div id="grid-view" class="grid-view">
+            <!-- Tlačítka se vygenerují automaticky z JavaScriptu -->
+        </div>
+
+        <!-- Zobrazení detailu stanoviště (skryté v základu) -->
+        <div id="detail-view" class="detail-view hidden">
+            <button id="back-btn" class="back-btn">&larr; Zpět na seznam</button>
+            <h2 id="detail-title"></h2>
+            <div id="detail-content" class="detail-content"></div>
+            
+            <div class="photos-heading" id="photos-heading">Fotografie:</div>
+            <div id="detail-gallery" class="gallery"></div>
+        </div>
+    </main>
+
+    <!-- Modal pro zvětšení fotky na celou obrazovku -->
+    <div id="fullscreen-modal" class="modal hidden">
+        <span id="close-modal" class="close-modal">&times;</span>
+        <img id="modal-img" class="modal-img" src="" alt="Zvětšená fotografie">
+    </div>
+
+    <!-- ... zde končí div detail-view ... -->
+
+        <footer>
+            <a href="podminky.html" class="footer-link">Všeobecné smluvní podmínky (VOP-PT)</a>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
